@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Construction | Building Trust, Crafting Legacies</title>
+
+    <!-- Cyber Security & Hardening Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D97706'><circle cx='12' cy='12' r='5'/><path d='M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42' stroke='%23D97706' stroke-width='2' stroke-linecap='round'/></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Noto+Sans+Gujarati:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            'gold-hover': '#B89628',
+                            'gold-light': '#FBF6E9',
+                            dark: '#0F172A',
+                            navy: '#0A1128',
+                            blue: '#1E293B',
+                            charcoal: '#334155',
+                            cream: '#F8F9FA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        gujarati: ['"Noto Sans Gujarati"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-navy text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center text-brand-gold font-medium">
+                    <i class="fas fa-shield-alt mr-1.5"></i> RERA Approved Builder (Gujarat)
+                </span>
+                <span class="hidden md:inline text-slate-500">|</span>
+                <span class="hidden md:inline text-slate-300">
+                    <i class="fas fa-award mr-1.5 text-brand-gold"></i> 26+ Years of Architectural Excellence
+                </span>
+            </div>
+            <div class="flex items-center space-x-5 text-xs">
+                <a href="tel:+919876543210" class="hover:text-brand-gold transition flex items-center">
+                    <i class="fas fa-phone-alt text-brand-gold mr-1.5"></i> +91 98765 43210
+                </a>
+                <a href="mailto:info@suryaconstruction.com" class="hover:text-brand-gold transition flex items-center">
+                    <i class="fas fa-envelope text-brand-gold mr-1.5"></i> info@suryaconstruction.com
+                </a>
+                <button onclick="openSiteVisitModal()" class="hidden sm:inline-flex bg-brand-gold/20 hover:bg-brand-gold text-brand-gold hover:text-slate-900 px-3 py-1 rounded transition text-xs font-semibold tracking-wide">
+                    <i class="fas fa-calendar-check mr-1.5"></i> Book Site Visit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-600 via-brand-gold to-yellow-300 flex items-center justify-center text-brand-navy shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fas fa-sun text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline space-x-1.5">
+                            <span class="font-serif text-2xl font-bold tracking-tight text-brand-navy">SURYA</span>
+                            <span class="text-xs uppercase font-extrabold tracking-widest text-brand-gold">CONSTRUCTION</span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 font-medium tracking-wide">Building Trust • Crafting Legacies</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+                    <a href="#home" class="nav-link text-brand-gold">Home</a>
+                    <a href="#about" class="nav-link hover:text-brand-gold transition">About Us</a>
+                    <a href="#projects" class="nav-link hover:text-brand-gold transition flex items-center">
+                        Projects <span class="ml-1 text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded-full font-bold">Featured</span>
+                    </a>
+                    <a href="#amenities" class="nav-link hover:text-brand-gold transition">Amenities</a>
+                    <a href="#directors" class="nav-link hover:text-brand-gold transition">Leadership</a>
+                    <a href="#careers" class="nav-link hover:text-brand-gold transition flex items-center">
+                        Careers <span class="ml-1 w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    </a>
+                    <a href="#contact" class="nav-link hover:text-brand-gold transition">Contact</a>
+                </nav>
+
+                <!-- Action Button & Mobile Hamburger -->
+                <div class="flex items-center space-x-3">
+                    <a href="#projects" class="hidden sm:inline-flex items-center justify-center bg-brand-navy hover:bg-slate-800 text-white font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg transition shadow hover:shadow-lg border border-brand-gold/40">
+                        <i class="fas fa-building mr-2 text-brand-gold"></i> View Properties
+                    </a>
+                    <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-700 hover:text-brand-navy focus:outline-none">
+                        <i class="fas fa-bars text-2xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 shadow-xl">
+            <div class="flex flex-col space-y-4 font-semibold text-slate-700">
+                <a href="#home" class="mobile-link text-brand-gold py-1">Home</a>
+                <a href="#about" class="mobile-link hover:text-brand-gold py-1">About Company</a>
+                <a href="#projects" class="mobile-link hover:text-brand-gold py-1">Projects (Surya Prime, Residency 1 & 2, Shivalay)</a>
+                <a href="#amenities" class="mobile-link hover:text-brand-gold py-1">Amenities & Features</a>
+                <a href="#directors" class="mobile-link hover:text-brand-gold py-1">Board of Directors</a>
+                <a href="#careers" class="mobile-link hover:text-brand-gold py-1 flex items-center justify-between">
+                    <span>Career Opportunities</span>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full">Hiring</span>
+                </a>
+                <a href="#contact" class="mobile-link hover:text-brand-gold py-1">Contact & Inquiries</a>
+                <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                    <button onclick="openSiteVisitModal()" class="w-full bg-brand-navy text-white py-2.5 rounded-lg text-sm font-semibold flex items-center justify-center">
+                        <i class="fas fa-calendar-alt text-brand-gold mr-2"></i> Schedule Site Visit
+                    </button>
+                    <a href="https://wa.me/919876543210?text=Hello%20Surya%20Construction,%20I%20am%20interested%20in%20your%20projects." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg text-sm font-semibold flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-lg mr-2"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[640px] lg:min-h-[760px] flex items-center bg-brand-navy text-white overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=2000&q=80" 
+                 alt="Surya Construction Landmark" 
+                 class="w-full h-full object-cover object-center opacity-30 transform scale-105 duration-1000 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-brand-navy/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-8 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brand-gold/15 border border-brand-gold/30 px-3.5 py-1.5 rounded-full text-brand-gold text-xs sm:text-sm font-semibold tracking-wider uppercase">
+                        <i class="fas fa-gem text-xs"></i>
+                        <span>Gujarat's Premier Real Estate Developer</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white">
+                        Building Dreams with <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-brand-gold to-amber-500">Unmatched Luxury</span> & Integrity.
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+                        For over two decades, <strong class="text-white font-semibold">Surya Construction</strong> has transformed Gujarat's skyline with iconic residential landmarks and world-class commercial corporate spaces, built with cutting-edge engineering and timeless aesthetics.
+                    </p>
+
+                    <!-- Quick Highlights Badges -->
+                    <div class="flex flex-wrap gap-4 text-xs font-medium text-slate-300 pt-2">
+                        <div class="flex items-center bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fas fa-check-circle text-brand-gold mr-2"></i> 100% RERA Registered
+                        </div>
+                        <div class="flex items-center bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fas fa-check-circle text-brand-gold mr-2"></i> On-Time Possession Record
+                        </div>
+                        <div class="flex items-center bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                            <i class="fas fa-check-circle text-brand-gold mr-2"></i> Earthquake Resistant Design
+                        </div>
+                    </div>
+
+                    <!-- Call to Actions -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects" class="bg-gradient-to-r from-amber-500 to-brand-gold hover:from-amber-600 hover:to-brand-gold-hover text-brand-navy font-bold px-7 py-3.5 rounded-xl shadow-xl transition-all duration-300 hover:shadow-amber-500/25 flex items-center text-sm uppercase tracking-wider">
+                            Explore Projects <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <button onclick="openSiteVisitModal()" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-xl border border-white/20 backdrop-blur-md transition text-sm flex items-center">
+                            <i class="fas fa-vr-cardboard text-brand-gold mr-2 text-base"></i> Schedule Free Site Visit
+                        </button>
+                        <button onclick="downloadCorporateBrochure()" class="bg-transparent hover:bg-white/5 text-slate-300 hover:text-white font-medium px-4 py-3.5 rounded-xl transition text-sm flex items-center">
+                            <i class="fas fa-file-download mr-2 text-brand-gold"></i> Download Brochure
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Quick Inquiry Card -->
+                <div class="lg:col-span-4">
+                    <div class="bg-white rounded-2xl p-6 sm:p-7 shadow-2xl border border-slate-100 text-slate-800">
+                        <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-brand-navy">Quick Property Enquiry</h3>
+                                <p class="text-xs text-slate-500">Get instant details & floor plan booklet</p>
+                            </div>
+                            <span class="w-10 h-10 rounded-full bg-amber-50 text-brand-gold flex items-center justify-center">
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </div>
+
+                        <form id="heroInquiryForm" onsubmit="handleHeroSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+                            <!-- Security Honeypot (Anti-Bot Trap) -->
+                            <div style="display:none !important; visibility:hidden !important; position:absolute; left:-9999px;">
+                                <input type="text" id="hero_hp_check" name="_sec_website_hp" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <div>
+                                <label class="block text-slate-600 font-semibold mb-1">Your Full Name *</label>
+                                <input type="text" id="heroName" required maxlength="50" minlength="2" placeholder="e.g. Rajeshbhai Patel" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold">
+                            </div>
+                            <div>
+                                <label class="block text-slate-600 font-semibold mb-1">Mobile Number *</label>
+                                <input type="tel" id="heroPhone" required maxlength="10" minlength="10" pattern="[6-9][0-9]{9}" title="Enter valid 10-digit Indian Mobile Number" placeholder="e.g. 98250 12345" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold">
+                            </div>
+                            <div>
+                                <label class="block text-slate-600 font-semibold mb-1">Select Project Interested *</label>
+                                <select id="heroProject" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold bg-white">
+                                    <option value="">-- Choose Surya Project --</option>
+                                    <option value="Surya Prime">Surya Prime (Commercial Hub)</option>
+                                    <option value="Surya Residency 1">Surya Residency 1 (2 & 3 BHK)</option>
+                                    <option value="Surya Residency 2">Surya Residency 2 (3 & 4 BHK Smart Homes)</option>
+                                    <option value="Surya Shivalay">Surya Shivalay (Divine Living)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-slate-600 font-semibold mb-1">Preferred Unit Type</label>
+                                <select id="heroUnitType" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold bg-white">
+                                    <option value="2 BHK">2 BHK Luxury Apartment</option>
+                                    <option value="3 BHK">3 BHK Luxury Apartment</option>
+                                    <option value="4 BHK">4 BHK Royal Penthouse</option>
+                                    <option value="Commercial">Corporate Office / Retail Showroom</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-navy hover:bg-slate-800 text-white font-bold py-3 rounded-lg shadow-md transition duration-200 flex items-center justify-center space-x-2 text-xs uppercase tracking-wider">
+                                <span>Get Instant Price & Brochure</span>
+                                <i class="fas fa-paper-plane text-brand-gold"></i>
+                            </button>
+                            <p class="text-[11px] text-slate-400 text-center">
+                                <i class="fas fa-lock mr-1"></i> Your information is 100% confidential.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave divider -->
+        <div class="absolute bottom-0 left-0 right-0 leading-none">
+            <svg class="w-full h-8 sm:h-12 text-slate-50 fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,121.31,200,111.45,241.6,105.52,282.16,92.21,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Trust & Statistics Bar -->
+    <section class="py-10 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-white shadow-sm border border-slate-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-serif">26+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1">Years Of Trust</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white shadow-sm border border-slate-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-brand-gold font-serif">45+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1">Delivered Landmarks</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white shadow-sm border border-slate-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-serif">12,500+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1">Delighted Families</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white shadow-sm border border-slate-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-600 font-serif">100%</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1">RERA & Title Clear</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Surya Construction Engineers" 
+                             class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Experience badge overlay -->
+                    <div class="absolute -bottom-6 -right-6 sm:bottom-6 sm:right-6 bg-brand-navy text-white p-5 rounded-2xl shadow-2xl border border-brand-gold/30 max-w-xs">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-3xl font-extrabold text-brand-gold font-serif">1998</span>
+                            <div class="text-xs leading-snug font-medium text-slate-300">
+                                Established with a commitment to quality and transparency in Gujarat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-brand-gold text-xs font-bold tracking-widest uppercase">
+                        <i class="fas fa-sun"></i>
+                        <span>About Surya Construction</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-navy leading-tight">
+                        Crafting Gujarat's Finest Residential & Commercial Horizons.
+                    </h2>
+
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Founded with a steadfast vision to elevate urban living, <strong>Surya Construction</strong> is recognized among Gujarat's top real estate developers. We don't just build high-rises; we build enduring foundations where families flourish and businesses thrive.
+                    </p>
+
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Every project — from our flagship commercial tower <strong class="text-brand-navy">Surya Prime</strong> to prestigious residential communities like <strong class="text-brand-navy">Surya Residency 1</strong>, <strong class="text-brand-navy">Surya Residency 2</strong>, and <strong class="text-brand-navy">Surya Shivalay</strong> — is delivered with Grade-A materials, seismic safety, and complete regulatory compliance.
+                    </p>
+
+                    <!-- Core Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 text-brand-gold flex items-center justify-center shrink-0">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-brand-navy">Uncompromising Quality</h4>
+                                <p class="text-[11px] text-slate-500">ISO 9001 certified civil engineering standards.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-brand-navy">100% Legal Transparency</h4>
+                                <p class="text-[11px] text-slate-500">Clear title deed, RERA approved & bank loan ready.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                                <i class="fas fa-stopwatch"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-brand-navy">Guaranteed Possession</h4>
+                                <p class="text-[11px] text-slate-500">Documented timeline delivery with zero delay record.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-brand-navy">Eco-Friendly Architecture</h4>
+                                <p class="text-[11px] text-slate-500">Rainwater harvesting, solar power & green landscaping.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section (CORE USER REQUEST) -->
+    <section id="projects" class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <div class="inline-flex items-center space-x-2 text-brand-gold text-xs font-bold tracking-widest uppercase bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
+                    <i class="fas fa-city"></i>
+                    <span>Our Landmark Portfolio</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-navy">
+                    Explore Surya Signature Projects
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Discover our most sought-after properties featuring modern architecture, strategic locations, and luxury lifestyles.
+                </p>
+
+                <!-- Project Category Filter Pills -->
+                <div class="flex flex-wrap justify-center gap-2 pt-4" id="projectFilterButtons">
+                    <button onclick="filterProjects('all')" class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-brand-navy text-white shadow">
+                        All Projects (4)
+                    </button>
+                    <button onclick="filterProjects('residential')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-200">
+                        Residential
+                    </button>
+                    <button onclick="filterProjects('commercial')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-200">
+                        Commercial Hub
+                    </button>
+                    <button onclick="filterProjects('ongoing')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-200">
+                        Ongoing
+                    </button>
+                    <button onclick="filterProjects('ready')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-200">
+                        Ready To Move
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8" id="projectsContainer">
+                
+                <!-- 1. SURYA PRIME (Commercial) -->
+                <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300" 
+                     data-category="commercial ongoing" 
+                     data-id="surya-prime">
+                    <div class="relative h-72 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Surya Prime" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            <span class="bg-amber-500 text-slate-900 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md shadow">
+                                Commercial Hub
+                            </span>
+                            <span class="bg-emerald-600 text-white text-xs font-semibold px-2.5 py-1 rounded-md shadow">
+                                Under Construction
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="text-xs uppercase tracking-wider text-amber-300 font-semibold block">S.G. Highway, Ahmedabad</span>
+                            <h3 class="font-serif text-2xl font-bold">Surya Prime</h3>
+                        </div>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Ultra-premium corporate office towers and high-street retail showrooms designed with double-height glass facades, grand entrance atriums, and multi-level EV parking.
+                        </p>
+
+                        <!-- Specifications List -->
+                        <div class="grid grid-cols-2 gap-3 py-2 border-y border-slate-100 text-xs">
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-layer-group text-brand-gold w-5"></i>
+                                <span><strong>Floors:</strong> G + 22 Stories</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-vector-square text-brand-gold w-5"></i>
+                                <span><strong>Carpet:</strong> 850 - 6,200 Sq.Ft</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-parking text-brand-gold w-5"></i>
+                                <span><strong>Parking:</strong> 3 Level Basements</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-certificate text-brand-gold w-5"></i>
+                                <span><strong>RERA:</strong> PR/GJ/AHM/2024/091</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block font-medium">Starting From</span>
+                                <span class="text-lg font-extrabold text-brand-navy">₹78 Lakhs*</span>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button onclick="openProjectModal('surya-prime')" class="bg-brand-navy hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition">
+                                    <i class="fas fa-info-circle mr-1 text-brand-gold"></i> View Specs
+                                </button>
+                                <button onclick="openSiteVisitFor('Surya Prime')" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold px-3 py-2.5 rounded-lg transition">
+                                    Inquire
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. SURYA RESIDENCY 1 (Residential) -->
+                <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300" 
+                     data-category="residential ready" 
+                     data-id="surya-residency-1">
+                    <div class="relative h-72 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Surya Residency 1" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            <span class="bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md shadow">
+                                Residential
+                            </span>
+                            <span class="bg-emerald-600 text-white text-xs font-semibold px-2.5 py-1 rounded-md shadow">
+                                Ready to Move
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="text-xs uppercase tracking-wider text-amber-300 font-semibold block">Science City Road, Ahmedabad</span>
+                            <h3 class="font-serif text-2xl font-bold">Surya Residency 1</h3>
+                        </div>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            A tranquil residential paradise offering spacious 2 & 3 BHK premium apartments with lush landscaping, clubhouse, children play court, and dedicated senior citizen deck.
+                        </p>
+
+                        <!-- Specifications List -->
+                        <div class="grid grid-cols-2 gap-3 py-2 border-y border-slate-100 text-xs">
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-home text-brand-gold w-5"></i>
+                                <span><strong>Type:</strong> 2 & 3 BHK Homes</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-vector-square text-brand-gold w-5"></i>
+                                <span><strong>Super Area:</strong> 1,350 - 1,890 Sq.Ft</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-check-double text-brand-gold w-5"></i>
+                                <span><strong>Possession:</strong> Immediate</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-certificate text-brand-gold w-5"></i>
+                                <span><strong>RERA:</strong> PR/GJ/AHM/2021/118</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block font-medium">Starting From</span>
+                                <span class="text-lg font-extrabold text-brand-navy">₹62 Lakhs*</span>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button onclick="openProjectModal('surya-residency-1')" class="bg-brand-navy hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition">
+                                    <i class="fas fa-info-circle mr-1 text-brand-gold"></i> View Specs
+                                </button>
+                                <button onclick="openSiteVisitFor('Surya Residency 1')" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold px-3 py-2.5 rounded-lg transition">
+                                    Inquire
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. SURYA RESIDENCY 2 (Residential) -->
+                <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300" 
+                     data-category="residential ongoing" 
+                     data-id="surya-residency-2">
+                    <div class="relative h-72 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Surya Residency 2" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            <span class="bg-purple-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md shadow">
+                                Smart Residences
+                            </span>
+                            <span class="bg-amber-500 text-slate-900 text-xs font-semibold px-2.5 py-1 rounded-md shadow">
+                                Booking Fast
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="text-xs uppercase tracking-wider text-amber-300 font-semibold block">Shela / South Bopal, Ahmedabad</span>
+                            <h3 class="font-serif text-2xl font-bold">Surya Residency 2</h3>
+                        </div>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            The evolution of luxury: 3 & 4 BHK Smart Homes equipped with automated lighting, temperature control, infinity rooftop swimming pool, and sky-deck recreation club.
+                        </p>
+
+                        <!-- Specifications List -->
+                        <div class="grid grid-cols-2 gap-3 py-2 border-y border-slate-100 text-xs">
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-microchip text-brand-gold w-5"></i>
+                                <span><strong>Type:</strong> 3 & 4 BHK Smart Homes</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-vector-square text-brand-gold w-5"></i>
+                                <span><strong>Area:</strong> 2,150 - 3,100 Sq.Ft</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-water-ladder text-brand-gold w-5"></i>
+                                <span><strong>Amenities:</strong> Sky Pool & Gym</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-certificate text-brand-gold w-5"></i>
+                                <span><strong>RERA:</strong> PR/GJ/AHM/2023/344</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block font-medium">Starting From</span>
+                                <span class="text-lg font-extrabold text-brand-navy">₹95 Lakhs*</span>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button onclick="openProjectModal('surya-residency-2')" class="bg-brand-navy hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition">
+                                    <i class="fas fa-info-circle mr-1 text-brand-gold"></i> View Specs
+                                </button>
+                                <button onclick="openSiteVisitFor('Surya Residency 2')" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold px-3 py-2.5 rounded-lg transition">
+                                    Inquire
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. SURYA SHIVALAY (Residential / Divine) -->
+                <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300" 
+                     data-category="residential ready" 
+                     data-id="surya-shivalay">
+                    <div class="relative h-72 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Surya Shivalay" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            <span class="bg-amber-700 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md shadow">
+                                Divine Residences
+                            </span>
+                            <span class="bg-emerald-600 text-white text-xs font-semibold px-2.5 py-1 rounded-md shadow">
+                                100% Vastu Compliant
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="text-xs uppercase tracking-wider text-amber-300 font-semibold block">Near Vaishnodevi Circle, Ahmedabad</span>
+                            <h3 class="font-serif text-2xl font-bold">Surya Shivalay</h3>
+                        </div>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Experience serene harmony and divine peace. Premium 3 & 4 BHK residences built strictly with authentic Vastu Shastra principles, surrounded by landscaped lotus ponds and an in-campus Shiva Temple.
+                        </p>
+
+                        <!-- Specifications List -->
+                        <div class="grid grid-cols-2 gap-3 py-2 border-y border-slate-100 text-xs">
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-om text-brand-gold w-5"></i>
+                                <span><strong>Feature:</strong> In-Campus Temple</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-vector-square text-brand-gold w-5"></i>
+                                <span><strong>Units:</strong> 3 & 4 BHK Palatial</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-compass text-brand-gold w-5"></i>
+                                <span><strong>Vastu:</strong> 100% Verified Design</span>
+                            </div>
+                            <div class="flex items-center text-slate-700">
+                                <i class="fas fa-certificate text-brand-gold w-5"></i>
+                                <span><strong>RERA:</strong> PR/GJ/AHM/2022/207</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2">
+                            <div>
+                                <span class="text-[11px] text-slate-400 block font-medium">Starting From</span>
+                                <span class="text-lg font-extrabold text-brand-navy">₹88 Lakhs*</span>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button onclick="openProjectModal('surya-shivalay')" class="bg-brand-navy hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition">
+                                    <i class="fas fa-info-circle mr-1 text-brand-gold"></i> View Specs
+                                </button>
+                                <button onclick="openSiteVisitFor('Surya Shivalay')" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold px-3 py-2.5 rounded-lg transition">
+                                    Inquire
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities & Features Showcase -->
+    <section id="amenities" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">The Surya Lifestyle</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold">World-Class Amenities Designed For Your Wellbeing</h2>
+                <p class="text-slate-300 text-sm sm:text-base">
+                    Every Surya project is thoughtfully created to offer an elevated lifestyle with premium club facilities, active sports zones, and serene green environments.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl text-center hover:bg-white/10 hover:border-brand-gold transition duration-300">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-white">Infinity Pool</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">Temperature controlled with baby splash pool</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl text-center hover:bg-white/10 hover:border-brand-gold transition duration-300">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-white">Fitness Studio</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">Equipped with LifeFitness cardio & weights</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl text-center hover:bg-white/10 hover:border-brand-gold transition duration-300">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-white">EV Charging Bay</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">Fast charging for modern electric vehicles</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl text-center hover:bg-white/10 hover:border-brand-gold transition duration-300">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-white">3-Tier Security</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">24x7 CCTV, RFID entry & video intercoms</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl text-center hover:bg-white/10 hover:border-brand-gold transition duration-300">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-white">Zen Gardens</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">Aroma walkways & senior citizen decks</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl text-center hover:bg-white/10 hover:border-brand-gold transition duration-300">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-2xl mb-3">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-white">Clubhouse & Games</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">Billiards, table tennis & banquet hall</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership / Board of Directors Section (CORE USER REQUEST) -->
+    <section id="directors" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <div class="inline-flex items-center space-x-2 text-brand-gold text-xs font-bold tracking-widest uppercase bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
+                    <i class="fas fa-users-cog"></i>
+                    <span>Visionary Leadership</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-navy">
+                    Board of Directors
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Steered by seasoned industry pioneers with over three decades of civil engineering mastery, strategic innovation, and commitment to corporate ethics.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Director 1: Founder & Chairman -->
+                <div class="director-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" 
+                             alt="Mr. Rameshchandra Patel" 
+                             class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 right-2 bg-brand-navy/90 text-white backdrop-blur-sm px-3 py-1 rounded-md text-xs font-semibold flex justify-between items-center">
+                            <span>Founder & Chairman</span>
+                            <span class="text-brand-gold">35+ Yrs Exp</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-brand-navy">Mr. Rameshchandra Patel</h3>
+                            <p class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-2">Chairman & Managing Director</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                A visionary civil engineer whose leadership established Surya Construction as a symbol of trust, structural integrity, and punctual delivery across Gujarat.
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fas fa-graduation-cap text-brand-gold mr-1"></i> B.E. Civil (L.D. Engg)</span>
+                            <div class="flex space-x-2 text-slate-400">
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fab fa-linkedin"></i></a>
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Director 2: Managing Director (Next-Gen) -->
+                <div class="director-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" 
+                             alt="Mr. Bhavesh Patel" 
+                             class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 right-2 bg-brand-navy/90 text-white backdrop-blur-sm px-3 py-1 rounded-md text-xs font-semibold flex justify-between items-center">
+                            <span>Managing Director</span>
+                            <span class="text-brand-gold">18+ Yrs Exp</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-brand-navy">Mr. Bhavesh Patel</h3>
+                            <p class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-2">Director - Strategy & Tech</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Spearheading technological innovation, BIM modeling, and smart home automation systems across all ongoing high-rise and commercial projects.
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fas fa-graduation-cap text-brand-gold mr-1"></i> MS Construction Mgmt</span>
+                            <div class="flex space-x-2 text-slate-400">
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fab fa-linkedin"></i></a>
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Director 3: Chief Architect & Design -->
+                <div class="director-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" 
+                             alt="Mr. Jignesh Shah" 
+                             class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 right-2 bg-brand-navy/90 text-white backdrop-blur-sm px-3 py-1 rounded-md text-xs font-semibold flex justify-between items-center">
+                            <span>Director - Architecture</span>
+                            <span class="text-brand-gold">22+ Yrs Exp</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-brand-navy">Ar. Jignesh Shah</h3>
+                            <p class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-2">Principal Architect</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Renowned for biophilic architecture, eco-friendly ventilation layouts, and harmonizing authentic Vastu Shastra with luxury global aesthetics.
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fas fa-graduation-cap text-brand-gold mr-1"></i> B.Arch, CEPT Univ</span>
+                            <div class="flex space-x-2 text-slate-400">
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fab fa-linkedin"></i></a>
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Director 4: Director of Operations & Customer Success -->
+                <div class="director-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                             alt="Mrs. Nehaben Patel" 
+                             class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-2 left-2 right-2 bg-brand-navy/90 text-white backdrop-blur-sm px-3 py-1 rounded-md text-xs font-semibold flex justify-between items-center">
+                            <span>Director - Operations</span>
+                            <span class="text-brand-gold">15+ Yrs Exp</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-brand-navy">Mrs. Nehaben Patel</h3>
+                            <p class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-2">Customer Experience & HR</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Championing seamless handover experiences, customer happiness, ethical talent acquisition, and community CSR initiatives across Gujarat.
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fas fa-graduation-cap text-brand-gold mr-1"></i> MBA (Finance & HR)</span>
+                            <div class="flex space-x-2 text-slate-400">
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fab fa-linkedin"></i></a>
+                                <a href="javascript:void(0)" class="hover:text-brand-navy"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chairman's Message Quote Block -->
+            <div class="mt-14 bg-gradient-to-r from-brand-navy to-slate-900 rounded-2xl p-8 sm:p-10 text-white relative shadow-xl overflow-hidden border border-brand-gold/30">
+                <i class="fas fa-quote-left text-brand-gold/20 text-7xl absolute top-4 left-6 pointer-events-none"></i>
+                <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
+                    <p class="font-serif text-lg sm:text-xl italic text-slate-200 leading-relaxed">
+                        "For Surya Construction, every foundation we cast is a vow of safety and every key we hand over represents a lifelong bond with our homebuyers. We pledge zero compromise on raw materials, strict timeline adherence, and transparent dealings for generations to come."
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-brand-gold tracking-wide">Rameshchandra Patel</h4>
+                        <p class="text-xs text-slate-400">Founder & Chairman, Surya Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section (CORE USER REQUEST) -->
+    <section id="careers" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+                <div class="inline-flex items-center space-x-2 text-emerald-700 bg-emerald-50 border border-emerald-200 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                    <i class="fas fa-briefcase"></i>
+                    <span>We Are Hiring</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-navy">
+                    Build Your Career at Surya Construction
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Join a team of passionate engineers, visionary architects, and customer success innovators who take immense pride in shaping Gujarat's real estate future.
+                </p>
+            </div>
+
+            <!-- Why Work With Us Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+                    <i class="fas fa-chart-line text-brand-gold text-2xl mb-2"></i>
+                    <h5 class="font-bold text-xs text-brand-navy">Rapid Career Growth</h5>
+                    <p class="text-[11px] text-slate-500">Merit-driven appraisals & learning</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+                    <i class="fas fa-shield-alt text-brand-gold text-2xl mb-2"></i>
+                    <h5 class="font-bold text-xs text-brand-navy">Safety First Sites</h5>
+                    <p class="text-[11px] text-slate-500">ISO standard PPE & site protocols</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+                    <i class="fas fa-wallet text-brand-gold text-2xl mb-2"></i>
+                    <h5 class="font-bold text-xs text-brand-navy">Competitive Package</h5>
+                    <p class="text-[11px] text-slate-500">Industry-best compensation & bonus</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+                    <i class="fas fa-heart text-brand-gold text-2xl mb-2"></i>
+                    <h5 class="font-bold text-xs text-brand-navy">Health & Family Cover</h5>
+                    <p class="text-[11px] text-slate-500">Comprehensive medical benefits</p>
+                </div>
+            </div>
+
+            <!-- Current Job Openings Cards -->
+            <div class="space-y-4">
+                <!-- Job 1 -->
+                <div class="bg-white rounded-xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="space-y-1.5">
+                        <div class="flex items-center gap-2">
+                            <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full">Engineering</span>
+                            <span class="text-xs text-slate-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Ahmedabad (Surya Prime Site)</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-navy">Senior Civil Project Engineer</h4>
+                        <p class="text-xs text-slate-600 max-w-2xl">
+                            Required 5+ years of hands-on experience in high-rise RCC execution, shuttering supervision, quality audits, contractor billing, and site coordination.
+                        </p>
+                        <div class="flex items-center space-x-4 text-xs text-slate-500 pt-1">
+                            <span><i class="fas fa-user-clock mr-1 text-brand-gold"></i> Full Time</span>
+                            <span><i class="fas fa-briefcase mr-1 text-brand-gold"></i> 5-8 Years Exp</span>
+                            <span><i class="fas fa-rupee-sign mr-1 text-brand-gold"></i> Best in Industry</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="openApplyJobModal('Senior Civil Project Engineer')" class="w-full md:w-auto bg-brand-navy hover:bg-slate-800 text-white font-semibold text-xs px-5 py-3 rounded-lg transition shadow">
+                            Apply For This Role <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="bg-white rounded-xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="space-y-1.5">
+                        <div class="flex items-center gap-2">
+                            <span class="bg-purple-100 text-purple-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full">Design & Architecture</span>
+                            <span class="text-xs text-slate-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Head Office (Bodakdev, Ahmedabad)</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-navy">Architectural Designer & 3D Visualizer</h4>
+                        <p class="text-xs text-slate-600 max-w-2xl">
+                            Expertise in AutoCAD, Revit, 3ds Max / Lumion for photorealistic 3D rendering of luxury residential facades, landscape details, and interior layouts.
+                        </p>
+                        <div class="flex items-center space-x-4 text-xs text-slate-500 pt-1">
+                            <span><i class="fas fa-user-clock mr-1 text-brand-gold"></i> Full Time</span>
+                            <span><i class="fas fa-briefcase mr-1 text-brand-gold"></i> 3-6 Years Exp</span>
+                            <span><i class="fas fa-rupee-sign mr-1 text-brand-gold"></i> Lucrative Package</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="openApplyJobModal('Architectural Designer & 3D Visualizer')" class="w-full md:w-auto bg-brand-navy hover:bg-slate-800 text-white font-semibold text-xs px-5 py-3 rounded-lg transition shadow">
+                            Apply For This Role <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="bg-white rounded-xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="space-y-1.5">
+                        <div class="flex items-center gap-2">
+                            <span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full">Sales & CRM</span>
+                            <span class="text-xs text-slate-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Shela / South Bopal (Surya Residency 2)</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-navy">Senior Real Estate Sales & Relationship Manager</h4>
+                        <p class="text-xs text-slate-600 max-w-2xl">
+                            Responsible for client site presentations, customer relationship management, guiding home loan approvals, and closing bookings for luxury apartments.
+                        </p>
+                        <div class="flex items-center space-x-4 text-xs text-slate-500 pt-1">
+                            <span><i class="fas fa-user-clock mr-1 text-brand-gold"></i> Full Time</span>
+                            <span><i class="fas fa-briefcase mr-1 text-brand-gold"></i> 2-5 Years Exp</span>
+                            <span><i class="fas fa-rupee-sign mr-1 text-brand-gold"></i> Fixed + High Incentives</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="openApplyJobModal('Senior Real Estate Sales & Relationship Manager')" class="w-full md:w-auto bg-brand-navy hover:bg-slate-800 text-white font-semibold text-xs px-5 py-3 rounded-lg transition shadow">
+                            Apply For This Role <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="bg-white rounded-xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="space-y-1.5">
+                        <div class="flex items-center gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full">Quality & Safety</span>
+                            <span class="text-xs text-slate-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Vaishnodevi Circle (Surya Shivalay)</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-navy">Quality Assurance / QC Engineer</h4>
+                        <p class="text-xs text-slate-600 max-w-2xl">
+                            Conduct cube compressive tests, slump tests, reinforcement verification, and raw material vendor audits to ensure zero quality discrepancies.
+                        </p>
+                        <div class="flex items-center space-x-4 text-xs text-slate-500 pt-1">
+                            <span><i class="fas fa-user-clock mr-1 text-brand-gold"></i> Full Time</span>
+                            <span><i class="fas fa-briefcase mr-1 text-brand-gold"></i> 3-5 Years Exp</span>
+                            <span><i class="fas fa-rupee-sign mr-1 text-brand-gold"></i> Attractive Benefits</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="openApplyJobModal('Quality Assurance / QC Engineer')" class="w-full md:w-auto bg-brand-navy hover:bg-slate-800 text-white font-semibold text-xs px-5 py-3 rounded-lg transition shadow">
+                            Apply For This Role <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spontaneous Application Note -->
+            <div class="mt-8 text-center p-6 bg-amber-50/70 border border-amber-200 rounded-xl">
+                <p class="text-xs sm:text-sm text-slate-700">
+                    Don't see your specific role listed above? Send your resume directly to our HR team at 
+                    <a href="mailto:careers@suryaconstruction.com" class="text-brand-navy font-bold underline hover:text-brand-gold">careers@suryaconstruction.com</a> 
+                    or call our HR desk at <strong>+91 98765 43212</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials & Trust -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+                <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">Client Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-navy">Voices of Our Proud Homeowners</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Real experiences from proud owners of Surya Residency 1, Surya Shivalay, and Surya Prime.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 italic">
+                            "We moved into Surya Residency 1 two years ago. The construction quality is impeccable—no seepage, exceptional sound insulation, and the garden area is a blessing for our kids. Surya Construction delivers exactly what they show in the 3D brochure!"
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-200 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-navy flex items-center justify-center font-bold text-sm">
+                            PP
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-xs text-brand-navy">Pankajbhai Patel</h5>
+                            <span class="text-[11px] text-slate-500">Owner, Flat 802 - Surya Residency 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 italic">
+                            "Surya Shivalay offers peace like nowhere else in the city. The temple premises inside the campus and the 100% Vastu compliant floor plan brought unmatched positive vibes to our family. The documentation was crystal clear."
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-200 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-navy flex items-center justify-center font-bold text-sm">
+                            MS
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-xs text-brand-navy">Dr. Mayank Shah</h5>
+                            <span class="text-[11px] text-slate-500">Owner, 4 BHK - Surya Shivalay</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 italic">
+                            "Booked our corporate head office at Surya Prime. The double-height grand lobby, 3-level basement parking, and strategic SG Highway location has enhanced our company's prestige before multinational clients."
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-200 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-navy flex items-center justify-center font-bold text-sm">
+                            DM
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-xs text-brand-navy">Dhaval Mehta</h5>
+                            <span class="text-[11px] text-slate-500">Managing Director, Infotech Hub (Surya Prime)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (CORE USER REQUEST) -->
+    <section id="contact" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-brand-gold text-xs font-bold tracking-widest uppercase">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Get in Touch</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold">
+                        Visit Our Corporate Office or Request a Project Visit
+                    </h2>
+
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Have queries about bookings, floor plans, home loans, or construction specifications? Our dedicated advisory team is available 7 days a week.
+                    </p>
+
+                    <!-- Contact Details Cards -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-brand-gold flex items-center justify-center shrink-0">
+                                <i class="fas fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Headquarters & Experience Centre</h4>
+                                <p class="text-xs text-slate-300 mt-1 leading-normal">
+                                    Surya House, 7th Floor, Sindhu Bhavan Road, Bodakdev, Ahmedabad, Gujarat 380054
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-brand-gold flex items-center justify-center shrink-0">
+                                <i class="fas fa-phone-volume text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Direct Phone Lines</h4>
+                                <p class="text-xs text-slate-300 mt-1">
+                                    General Inquiries: <a href="tel:+919876543210" class="text-amber-400 hover:underline">+91 98765 43210</a><br>
+                                    Sales & Site Visit: <a href="tel:+919825012345" class="text-amber-400 hover:underline">+91 98250 12345</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-brand-gold flex items-center justify-center shrink-0">
+                                <i class="fas fa-envelope-open-text text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Email Correspondence</h4>
+                                <p class="text-xs text-slate-300 mt-1">
+                                    Customer Sales: <span class="text-slate-200">sales@suryaconstruction.com</span><br>
+                                    Management: <span class="text-slate-200">info@suryaconstruction.com</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-brand-gold flex items-center justify-center shrink-0">
+                                <i class="fas fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Office & Site Timings</h4>
+                                <p class="text-xs text-slate-300 mt-1">
+                                    Mon - Sat: 9:30 AM – 7:30 PM <br>
+                                    Sunday: 10:00 AM – 5:00 PM (Site Offices Open)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-slate-100">
+                        <div class="mb-6">
+                            <h3 class="font-serif text-2xl font-bold text-brand-navy">Send Us a Direct Message</h3>
+                            <p class="text-xs sm:text-sm text-slate-500">Fill in the form below and our relationship manager will call you within 15 minutes.</p>
+                        </div>
+
+                        <form id="mainContactForm" onsubmit="handleContactSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+                            <!-- Security Honeypot (Anti-Bot Trap) -->
+                            <div style="display:none !important; visibility:hidden !important; position:absolute; left:-9999px;">
+                                <input type="text" id="contact_hp_check" name="_sec_website_hp" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-slate-700 font-semibold mb-1">Full Name *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-user absolute left-3.5 top-3 text-slate-400"></i>
+                                        <input type="text" id="contactName" required maxlength="60" minlength="2" placeholder="e.g. Amitbhai Shah" class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-brand-gold">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-slate-700 font-semibold mb-1">Phone Number *</label>
+                                    <div class="relative">
+                                        <i class="fas fa-phone absolute left-3.5 top-3 text-slate-400"></i>
+                                        <input type="tel" id="contactPhone" required maxlength="10" minlength="10" pattern="[6-9][0-9]{9}" title="Enter valid 10-digit Indian Mobile Number" placeholder="e.g. 98980 12345" class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-brand-gold">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-slate-700 font-semibold mb-1">Email Address</label>
+                                    <div class="relative">
+                                        <i class="fas fa-envelope absolute left-3.5 top-3 text-slate-400"></i>
+                                        <input type="email" id="contactEmail" maxlength="100" placeholder="e.g. amit@gmail.com" class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-brand-gold">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-slate-700 font-semibold mb-1">Project of Interest *</label>
+                                    <select id="contactProject" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-brand-gold bg-white">
+                                        <option value="">Select Surya Project</option>
+                                        <option value="Surya Prime">Surya Prime (Commercial Hub)</option>
+                                        <option value="Surya Residency 1">Surya Residency 1 (2 & 3 BHK)</option>
+                                        <option value="Surya Residency 2">Surya Residency 2 (Smart Luxury)</option>
+                                        <option value="Surya Shivalay">Surya Shivalay (Divine Living)</option>
+                                        <option value="General Inquiry">General / Land Partnership</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-slate-700 font-semibold mb-1">Message / Requirements</label>
+                                <textarea id="contactMessage" rows="4" maxlength="500" placeholder="Mention preferred floor, budget, or request a weekend site visit..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:border-brand-gold"></textarea>
+                            </div>
+
+                            <div class="flex items-start space-x-2 text-xs text-slate-500">
+                                <input type="checkbox" id="whatsappConsent" checked class="mt-0.5 rounded text-brand-gold focus:ring-brand-gold">
+                                <label for="whatsappConsent">Send brochure & price quotes on WhatsApp for faster communication.</label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-navy hover:bg-slate-800 text-white font-bold py-3.5 rounded-lg shadow-lg transition duration-200 flex items-center justify-center space-x-2 text-xs uppercase tracking-wider">
+                                <span>Submit Inquiry to Sales Team</span>
+                                <i class="fas fa-arrow-right text-brand-gold"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+                <!-- Col 1: About & Logo -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
+                            <i class="fas fa-sun text-xl"></i>
+                        </div>
+                        <span class="font-serif text-2xl font-bold text-white tracking-wide">SURYA CONSTRUCTION</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+                        Surya Construction is a benchmark of reliability, engineering innovation, and ethical real estate development across Gujarat since 1998.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="javascript:void(0)" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-slate-900 flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-slate-900 flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+                        <a href="javascript:void(0)" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-slate-900 flex items-center justify-center transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-slate-900 flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Featured Projects -->
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Our Projects</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" onclick="openProjectModal('surya-prime')" class="hover:text-brand-gold transition">Surya Prime (Commercial)</a></li>
+                        <li><a href="javascript:void(0)" onclick="openProjectModal('surya-residency-1')" class="hover:text-brand-gold transition">Surya Residency 1 (2 & 3 BHK)</a></li>
+                        <li><a href="javascript:void(0)" onclick="openProjectModal('surya-residency-2')" class="hover:text-brand-gold transition">Surya Residency 2 (3 & 4 BHK)</a></li>
+                        <li><a href="javascript:void(0)" onclick="openProjectModal('surya-shivalay')" class="hover:text-brand-gold transition">Surya Shivalay (Divine Living)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Company Links -->
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-brand-gold transition">About Us</a></li>
+                        <li><a href="#directors" class="hover:text-brand-gold transition">Board of Directors</a></li>
+                        <li><a href="#amenities" class="hover:text-brand-gold transition">Amenities & Quality</a></li>
+                        <li><a href="#careers" class="hover:text-brand-gold transition">Careers & Openings</a></li>
+                        <li><a href="#contact" class="hover:text-brand-gold transition">Contact & Locations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Compliance & RERA -->
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Compliance & Security</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-slate-400"><i class="fas fa-shield-alt text-brand-gold mr-1"></i> Gujarat RERA Registered</span></li>
+                        <li><span class="text-slate-400"><i class="fas fa-award text-brand-gold mr-1"></i> ISO 9001:2015 Certified</span></li>
+                        <li><span class="text-slate-400"><i class="fas fa-lock text-emerald-400 mr-1"></i> SSL/TLS 256-Bit Encrypted</span></li>
+                        <li><span class="text-slate-400"><i class="fas fa-user-shield text-emerald-400 mr-1"></i> OWASP Top-10 Protected</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Disclaimer & Copyright -->
+            <div class="border-t border-slate-800 pt-6 flex flex-col md:flex-row justify-between items-center text-[11px] text-slate-500 gap-4">
+                <p>© 2026 Surya Construction Limited. All Rights Reserved. Built with pride in Gujarat.</p>
+                <div class="flex space-x-4">
+                    <a href="javascript:void(0)" class="hover:text-slate-400">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="javascript:void(0)" class="hover:text-slate-400">Terms of Service</a>
+                    <span>•</span>
+                    <a href="javascript:void(0)" class="hover:text-slate-400">RERA Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <!-- WhatsApp Floating Trigger -->
+    <a href="https://wa.me/919876543210?text=Hello%20Surya%20Construction,%20I%20would%20like%20information%20on%20your%20projects." 
+       target="_blank" 
+       title="Chat on WhatsApp" 
+       class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Demo Banner for Boss Presentation (Interactive Helper) -->
+    <div class="fixed bottom-6 left-6 z-40 hidden sm:flex items-center bg-brand-navy/95 border border-brand-gold/50 text-white px-4 py-2.5 rounded-xl shadow-2xl backdrop-blur-md text-xs space-x-3">
+        <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+        <span><strong>Boss Demo Mode:</strong> Ready for presentation</span>
+        <button onclick="demoFillContactForm()" class="bg-brand-gold hover:bg-brand-gold-hover text-brand-navy px-2.5 py-1 rounded font-bold transition">
+            Auto-Fill Demo Data
+        </button>
+    </div>
+
+    <!-- MODAL 1: Project Details Rich Modal -->
+    <div id="projectModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between z-10">
+                <div>
+                    <span id="modalProjectTag" class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-800">Commercial Hub</span>
+                    <h3 id="modalProjectTitle" class="font-serif text-2xl font-bold text-brand-navy">Surya Prime</h3>
+                </div>
+                <button onclick="closeProjectModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body Content -->
+            <div class="p-6 space-y-6">
+                <!-- Gallery Image -->
+                <div class="relative h-72 sm:h-96 rounded-xl overflow-hidden bg-slate-900 shadow">
+                    <img id="modalProjectImg" src="" alt="Project Image" class="w-full h-full object-cover">
+                    <div class="absolute bottom-3 left-3 bg-black/70 text-white text-xs px-3 py-1 rounded-md backdrop-blur-sm flex items-center">
+                        <i class="fas fa-map-pin text-brand-gold mr-1.5"></i>
+                        <span id="modalProjectLoc">Location</span>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <h4 class="font-bold text-brand-navy text-sm uppercase tracking-wider mb-2">Project Overview</h4>
+                    <p id="modalProjectDesc" class="text-xs sm:text-sm text-slate-600 leading-relaxed"></p>
+                </div>
+
+                <!-- Key Specifications Grid -->
+                <div>
+                    <h4 class="font-bold text-brand-navy text-sm uppercase tracking-wider mb-3">Key Highlights & Specifications</h4>
+                    <div id="modalSpecsGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Included Amenities -->
+                <div>
+                    <h4 class="font-bold text-brand-navy text-sm uppercase tracking-wider mb-3">Amenities Included</h4>
+                    <div id="modalAmenitiesList" class="flex flex-wrap gap-2 text-xs">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Action Footer in Modal -->
+                <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs text-slate-400 block font-medium">Pricing starting from</span>
+                        <span id="modalPrice" class="text-xl font-extrabold text-brand-navy">₹78 Lakhs*</span>
+                    </div>
+                    <div class="flex space-x-3 w-full sm:w-auto">
+                        <button onclick="downloadBrochureFromModal()" class="flex-1 sm:flex-initial bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold px-4 py-2.5 rounded-lg transition flex items-center justify-center">
+                            <i class="fas fa-download mr-1.5 text-brand-gold"></i> Download Brochure
+                        </button>
+                        <button onclick="bookSiteVisitForModalProject()" class="flex-1 sm:flex-initial bg-brand-navy hover:bg-slate-800 text-white text-xs font-bold px-5 py-2.5 rounded-lg transition flex items-center justify-center shadow">
+                            <i class="fas fa-calendar-check mr-1.5 text-brand-gold"></i> Book Site Visit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Apply Job Modal (CAREER) -->
+    <div id="applyJobModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+            <div class="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Job Application</span>
+                    <h3 id="applyJobTitle" class="font-serif text-xl font-bold text-brand-navy">Apply for Position</h3>
+                </div>
+                <button onclick="closeApplyJobModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="jobApplicationForm" onsubmit="handleJobApplicationSubmit(event)" class="p-6 space-y-4 text-xs sm:text-sm">
+                <!-- Security Honeypot (Anti-Bot Trap) -->
+                <div style="display:none !important; visibility:hidden !important; position:absolute; left:-9999px;">
+                    <input type="text" id="job_hp_check" name="_sec_website_hp" tabindex="-1" autocomplete="off">
+                </div>
+                <div>
+                    <label class="block text-slate-700 font-semibold mb-1">Your Full Name *</label>
+                    <input type="text" id="applicantName" required maxlength="60" minlength="2" placeholder="e.g. Ketan Parmar" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-slate-700 font-semibold mb-1">Phone Number *</label>
+                        <input type="tel" id="applicantPhone" required maxlength="10" minlength="10" pattern="[6-9][0-9]{9}" title="Enter valid 10-digit Indian Mobile Number" placeholder="98250 XXXXX" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                    </div>
+                    <div>
+                        <label class="block text-slate-700 font-semibold mb-1">Email *</label>
+                        <input type="email" id="applicantEmail" required maxlength="100" placeholder="ketan@email.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-slate-700 font-semibold mb-1">Total Experience *</label>
+                        <select id="applicantExp" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold bg-white">
+                            <option value="1-3 Years">1 - 3 Years</option>
+                            <option value="3-5 Years">3 - 5 Years</option>
+                            <option value="5-8 Years">5 - 8 Years</option>
+                            <option value="8+ Years">8+ Years</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-700 font-semibold mb-1">Current CTC / Notice</label>
+                        <input type="text" id="applicantCtc" placeholder="e.g. 6 LPA / 30 Days" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-slate-700 font-semibold mb-1">Upload Resume (PDF/DOC) *</label>
+                    <input type="file" id="applicantResume" accept=".pdf,.doc,.docx" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-xs">
+                    <p class="text-[11px] text-slate-400 mt-1">Accepted: PDF, DOC, DOCX up to 5MB</p>
+                </div>
+                <div>
+                    <label class="block text-slate-700 font-semibold mb-1">Brief Introduction / Cover Note</label>
+                    <textarea id="applicantCover" rows="3" placeholder="Tell us why you are a great fit for Surya Construction..." class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-xs"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg shadow transition text-xs uppercase tracking-wider">
+                    Submit Job Application
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Schedule Site Visit Modal -->
+    <div id="siteVisitModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full shadow-2xl border border-slate-200">
+            <div class="bg-brand-navy text-white px-6 py-4 rounded-t-2xl flex items-center justify-between">
+                <div>
+                    <h3 class="font-serif text-lg font-bold">Schedule Free VIP Site Visit</h3>
+                    <p class="text-xs text-amber-300">Free cab pickup & drop available</p>
+                </div>
+                <button onclick="closeSiteVisitModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="siteVisitForm" onsubmit="handleSiteVisitSubmit(event)" class="p-6 space-y-4 text-xs sm:text-sm">
+                <!-- Security Honeypot (Anti-Bot Trap) -->
+                <div style="display:none !important; visibility:hidden !important; position:absolute; left:-9999px;">
+                    <input type="text" id="visit_hp_check" name="_sec_website_hp" tabindex="-1" autocomplete="off">
+                </div>
+                <div>
+                    <label class="block text-slate-700 font-semibold mb-1">Select Project *</label>
+                    <select id="visitProjectSelect" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 bg-white">
+                        <option value="Surya Prime">Surya Prime (Commercial)</option>
+                        <option value="Surya Residency 1">Surya Residency 1 (Ready 2/3 BHK)</option>
+                        <option value="Surya Residency 2">Surya Residency 2 (Smart 3/4 BHK)</option>
+                        <option value="Surya Shivalay">Surya Shivalay (Divine Living)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-slate-700 font-semibold mb-1">Your Name *</label>
+                    <input type="text" id="visitName" required maxlength="60" minlength="2" placeholder="Rajeshbhai" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300">
+                </div>
+                <div>
+                    <label class="block text-slate-700 font-semibold mb-1">Mobile Number *</label>
+                    <input type="tel" id="visitPhone" required maxlength="10" minlength="10" pattern="[6-9][0-9]{9}" title="Enter valid 10-digit Indian Mobile Number" placeholder="98250 12345" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-slate-700 font-semibold mb-1">Preferred Date *</label>
+                        <input type="date" id="visitDate" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-slate-700 font-semibold mb-1">Preferred Time *</label>
+                        <select id="visitTime" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs bg-white">
+                            <option value="Morning (10 AM - 12 PM)">10:00 AM - 12:00 PM</option>
+                            <option value="Afternoon (12 PM - 3 PM)">12:00 PM - 3:00 PM</option>
+                            <option value="Evening (3 PM - 6 PM)">3:00 PM - 6:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 text-xs text-slate-600">
+                    <input type="checkbox" id="visitCabReq" class="rounded text-brand-gold">
+                    <label for="visitCabReq">I need complimentary cab pickup from my location</label>
+                </div>
+                <button type="submit" class="w-full bg-brand-navy hover:bg-slate-800 text-white font-bold py-3 rounded-lg shadow transition text-xs uppercase tracking-wider">
+                    Confirm Site Visit Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastNotification" class="fixed top-5 right-5 z-50 hidden transition-all duration-300">
+        <div class="bg-brand-navy text-white px-5 py-4 rounded-xl shadow-2xl border-l-4 border-brand-gold flex items-center space-x-3 max-w-sm">
+            <div id="toastIcon" class="text-brand-gold text-xl"><i class="fas fa-check-circle"></i></div>
+            <div>
+                <h5 id="toastTitle" class="font-bold text-xs uppercase tracking-wider text-brand-gold">Success</h5>
+                <p id="toastMessage" class="text-xs text-slate-200 mt-0.5">Your request has been received!</p>
+            </div>
+            <button onclick="hideToast()" class="text-slate-400 hover:text-white ml-2 text-sm">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>

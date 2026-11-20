@@ -1,0 +1,18 @@
+# Environment and OS Files
+.DS_Store
+Thumbs.db
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary and build artifacts
+*.tmp
+temp/
+
+# Old unrelated workspace files
+qa_automation_tool/
+start.bat
+test_runner_verify.py
