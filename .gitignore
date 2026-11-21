@@ -16,3 +16,4 @@ temp/
 qa_automation_tool/
 start.bat
 test_runner_verify.py
+test-results/
