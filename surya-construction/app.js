@@ -727,3 +727,32 @@ window.addEventListener('click', (e) => {
     if (e.target === aModal) closeApplyJobModal();
     if (e.target === sModal) closeSiteVisitModal();
 });
+
+
+/**
+ * Filter Properties & Available Units (Flats & Offices)
+ * Differentiates 'Properties' inventory from 'Projects' schemes
+ */
+function filterPropertyUnits(category) {
+    const cards = document.querySelectorAll('.property-unit-card');
+    const buttons = document.querySelectorAll('#propertyFilterButtons button');
+
+    buttons.forEach(btn => {
+        btn.classList.remove('active', 'bg-brand-navy', 'text-white', 'shadow');
+        btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+    });
+
+    if (window.event && window.event.currentTarget) {
+        window.event.currentTarget.classList.add('active', 'bg-brand-navy', 'text-white', 'shadow');
+        window.event.currentTarget.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+    }
+
+    cards.forEach(card => {
+        const cardCats = card.getAttribute('data-unit-category') || '';
+        if (category === 'all' || cardCats.includes(category)) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
